@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: #d5d6e475;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+    height: 95vh;
+    width: 50vw;
+    background-image: url("/img/background.webp");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    border-radius: 4rem;
+    /* border: 1px solid; */
+    display: flex;
+}
+.toDo__area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid #eee; */
+    height: 100%;
+    width: 100%;
+
+}
+
+.toDo__title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 5rem;
+    top: 20%;
+}
+
+.toDo__list{
+    position: absolute;
+    top: 35%;
+    max-height: 13rem;
+    width: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.toDo__wrapper{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    border-bottom: 2px solid rgba(009, 000, 000,0.1);
+}
+
+.list__check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 3rem;
+    width: 100%;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    height: 50%;
+    width: 50%;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+input[type="checkbox"]:checked{
+    transition: 0.5s ease;
+    background-color: rgba(92, 68, 138, 0.507);
+    border-radius: 50%;
+}
+
+.list__text{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    
+}
